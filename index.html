@@ -16,8 +16,12 @@
     .program-list { display: grid; gap: 12px; margin-top: 12px; }
     .program-card { border: 1px solid #e3e6ef; border-radius: 6px; padding: 12px; background: #fdfdff; }
     .program-card h4 { margin: 0 0 4px; }
+    .program-card p { margin: 0 0 8px; }
+    .program-card ul { margin: 0; padding-left: 16px; color: #555; }
     .steps { list-style: decimal inside; padding-left: 16px; display: flex; flex-direction: column; gap: 8px; }
     .contact-details { display: flex; flex-direction: column; gap: 6px; }
+    .testimonials { display: grid; gap: 12px; margin-top: 12px; }
+    .testimonial { background: #f4f6fb; border-radius: 6px; padding: 14px; border: 1px solid #e3e6ef; }
     footer { margin-top: 32px; text-align: center; color: #666; }
   </style>
 </head>
@@ -47,14 +51,26 @@
             <article class="program-card">
               <h4>Basketball Training</h4>
               <p>Sharpen ball-handling and teamwork skills with certified coaches.</p>
+              <ul>
+                <li>Location: Dubai Sports Complex</li>
+                <li>Schedule: Mon & Wed, 5–7pm</li>
+              </ul>
             </article>
             <article class="program-card">
               <h4>Robotics Club</h4>
               <p>Hands-on builds and coding challenges for aspiring engineers.</p>
+              <ul>
+                <li>Location: Maker Lab, Dubai</li>
+                <li>Schedule: Sat, 10am–1pm</li>
+              </ul>
             </article>
             <article class="program-card">
               <h4>Art & Crafts Lab</h4>
               <p>Creative sessions exploring painting, sculpture, and DIY projects.</p>
+              <ul>
+                <li>Location: Creative Hub, Abu Dhabi</li>
+                <li>Schedule: Sun, 2–5pm</li>
+              </ul>
             </article>
           </div>
         </section>
@@ -72,6 +88,19 @@
             <span>Email: hello@extracurriculars.com</span>
             <span>Phone: +971 55 123 4567</span>
             <span>Hours: Sunday–Thursday, 9am–6pm GST</span>
+          </div>
+        </section>
+        <section id="voices">
+          <h3>Student Voices</h3>
+          <div class="testimonials">
+            <blockquote class="testimonial">
+              “Joining the robotics club helped me discover my passion for engineering.”
+              <footer>— Amina, Year 10</footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              “The basketball sessions gave me confidence on and off the court.”
+              <footer>— Khalid, Year 9</footer>
+            </blockquote>
           </div>
         </section>
       </div>
