@@ -22,6 +22,12 @@
     .contact-details { display: flex; flex-direction: column; gap: 6px; }
     .testimonials { display: grid; gap: 12px; margin-top: 12px; }
     .testimonial { background: #f4f6fb; border-radius: 6px; padding: 14px; border: 1px solid #e3e6ef; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 12px; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    label { font-weight: 600; font-size: 0.9rem; }
+    input, textarea { padding: 10px; border-radius: 6px; border: 1px solid #c9cfdd; font-size: 0.95rem; }
+    button { background: #1e88e5; color: #fff; border: none; padding: 10px 14px; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #166ac1; }
     footer { margin-top: 32px; text-align: center; color: #666; }
   </style>
 </head>
@@ -84,10 +90,24 @@
         </section>
         <section id="contact">
           <h3>Contact Us</h3>
-          <div class="contact-details">
-            <span>Email: hello@extracurriculars.com</span>
-            <span>Phone: +971 55 123 4567</span>
-            <span>Hours: Sunday–Thursday, 9am–6pm GST</span>
+          <div class="contact-grid">
+            <div class="contact-details">
+              <span>Email: hello@extracurriculars.com</span>
+              <span>Phone: +971 55 123 4567</span>
+              <span>Hours: Sunday–Thursday, 9am–6pm GST</span>
+            </div>
+            <form>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your name">
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com">
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
+
+              <button type="button">Send Inquiry</button>
+            </form>
           </div>
         </section>
         <section id="voices">
